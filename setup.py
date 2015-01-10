@@ -7,6 +7,6 @@ setup(
     author_email='arnold@arnoldarts.de',
     packages=find_packages(),
     entry_points={
-        'console_scripts': ['comics_downloader = comic_downloader.informationextractor']
+        'console_scripts': ['comics_downloader = comic_downloader.informationextractor:run']
     },
 )

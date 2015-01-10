@@ -7,7 +7,7 @@ import subprocess
 
 def parse_comics_json(filename):
     result = {}
-    data = json.load(open(args.jsonfile, 'r'))
+    data = json.load(open(filename, 'r'))
     comics = data['subproducts']
     for c in comics[:]:
         name = c['machine_name']
@@ -37,7 +37,7 @@ def filter_filetypes(comics, filetype):
             result[name] = c[filetype]
     return result
 
-if __name__ == '__main__':
+def run():
     parser = argparse.ArgumentParser(description='extract information from the json-files of humble bundles')
     parser.add_argument('jsonfile', metavar='filename', type=str, help='json-file to import')
     parser.add_argument('--extract', '-e', dest='extract', default='md5', choices=['md5', 'urls', 'download'])
@@ -66,8 +66,13 @@ if __name__ == '__main__':
         for c in comics.itervalues():
             if not os.path.isfile(c['targetname']):
                 subprocess.check_call([
-                    'echo',
+                    #'echo',
                     'wget', '-c',
                     '-O', c['targetname'],
                     c['url']
                 ])
+            else:
+                print '! Skipping %s as it exists already!' % c['targetname']
+
+if __name__ == '__main__':
+    run()
