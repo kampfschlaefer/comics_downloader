@@ -1,0 +1,160 @@
+{
+   "subproducts" : [
+      {
+         "machine_name" : "pdfquality_warning_comics",
+         "human_name" : "PDF Quality",
+         "downloads" : [],
+         "custom_download_page_box_html" : "<p>Warning: Some PDFs have been downsampled so that file size is below 100 MB for Google Play compatibility. This may result in lower quality images. Please view the HQ PDFs for better quality.</p>",
+         "payee" : {
+            "machine_name" : "humblebundle",
+            "human_name" : "Humble Bundle, Inc"
+         },
+         "icon" : "https://humblebundle-a.akamaihd.net/misc/files/4947cebf2c/images/icons/pdfquality_warning_comics.png",
+         "url" : ""
+      },
+      {
+         "payee" : {
+            "human_name" : "Image Comics",
+            "machine_name" : "imagecomics"
+         },
+         "url" : "https://imagecomics.com",
+         "icon" : "https://humblebundle-a.akamaihd.net/misc/files/hashed/c4695e2a248fd0997387ae7b7083bda442d7dd83.png",
+         "machine_name" : "imageexpo2015_previewbook",
+         "human_name" : "Image Expo 2015 Preview Book",
+         "custom_download_page_box_html" : "",
+         "downloads" : [
+            {
+               "download_version_number" : null,
+               "platform" : "ebook",
+               "machine_name" : "imageexpo2015_previewbook_ebook",
+               "download_struct" : [
+                  {
+                     "url" : {
+                        "web" : "https://hb1.ssl.hwcdn.net/ImageComicsPreviewBook2015_1420484117.cbz?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=b1c29b31ace443f64e7c75ffb1fbd869",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/ImageComicsPreviewBook2015_1420484117.cbz.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=0a7ef859f9b51971e7afc599f4a2325a"
+                     },
+                     "human_size" : "66.2 MB",
+                     "name" : "CBZ",
+                     "small" : 1,
+                     "md5" : "e842632d8a016a74dc2a6e396422e52f",
+                     "file_size" : 69424204
+                  },
+                  {
+                     "url" : {
+                        "web" : "https://hb1.ssl.hwcdn.net/ImageComicsPreviewBook2015_1420484117.epub?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=c83c5e48c3a3cc03a84ed13bca3dcad3",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/ImageComicsPreviewBook2015_1420484117.epub.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=57f0ad328c88461fa24396bab693d2e2"
+                     },
+                     "human_size" : "66.2 MB",
+                     "file_size" : 69465550,
+                     "md5" : "cbd4a2856acd9829ebc676cee9cdce1a",
+                     "sha1" : "c79285c0b87b2ff0f1dc23707926f2d1d5c02073",
+                     "small" : 1,
+                     "name" : "EPUB"
+                  },
+                  {
+                     "url" : {
+                        "web" : "https://hb1.ssl.hwcdn.net/imageexpo2015_previewbook_optimized_1420484117.pdf?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=c5fad93248a52caea9026f6b2988aad2",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/imageexpo2015_previewbook_optimized_1420484117.pdf.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=47e35ccad55144115188e1bb741e4c25"
+                     },
+                     "human_size" : "67.8 MB",
+                     "file_size" : 71145131,
+                     "md5" : "62f1150b1ce9f1a3e12757191b346df2",
+                     "name" : "PDF",
+                     "small" : 1,
+                     "sha1" : "a7b89efcf1c0bd12d7adbc150ca0fa0080c263c8"
+                  },
+                  {
+                     "url" : {
+                        "web" : "https://hb1.ssl.hwcdn.net/ImageComicsPreviewBook2015_1420484117.pdf?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=d9e15f3b788c8050fad64eb5bcb77fd9",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/ImageComicsPreviewBook2015_1420484117.pdf.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=ffe753eb22eed1b851c858f4a3119a7f"
+                     },
+                     "human_size" : "122.2 MB",
+                     "file_size" : 128115595,
+                     "md5" : "6bd96a0be4cf7b453a55ca8ca255e625",
+                     "name" : "PDF (HQ)",
+                     "small" : 1,
+                     "sha1" : "b50f8c5d2c30ae9cf0704b70bf961b6f64132e8d"
+                  }
+               ],
+               "download_identifier" : "",
+               "options_dict" : {}
+            }
+         ]
+      },
+      {
+         "payee" : {
+            "machine_name" : "imagecomics",
+            "human_name" : "Image Comics"
+         },
+         "url" : "https://imagecomics.com/comics/releases/alex-ada-vol.-1-tp",
+         "icon" : "https://humblebundle-a.akamaihd.net/misc/files/hashed/705f4d7e5cbcbc18aaf618be5e5eb63eaf37a003.png",
+         "human_name" : "Alex + Ada Vol. 1 (#1-5)",
+         "machine_name" : "alexandada_vol1",
+         "downloads" : [
+            {
+               "download_struct" : [
+                  {
+                     "url" : {
+                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_1420484117.cbz?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=b8920d3353aab8e94c047244bfd91c00",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_1420484117.cbz.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=e59d3d2bbdcaf180e009f05193bcf522"
+                     },
+                     "human_size" : "60.3 MB",
+                     "small" : 1,
+                     "name" : "CBZ",
+                     "md5" : "d3611fa1da058ef2123bcf68e4591be3",
+                     "file_size" : 63244785
+                  },
+                  {
+                     "file_size" : 63308127,
+                     "md5" : "e7bb40aebb27b98921a338c2bee31ba4",
+                     "sha1" : "2eb3c68c7e1a8ddf305d0fe4ecaac993b886e6a4",
+                     "small" : 1,
+                     "name" : "EPUB",
+                     "human_size" : "60.4 MB",
+                     "url" : {
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_1420484117.epub.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=75fedf786838740096d0e351e4d6175b",
+                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_1420484117.epub?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=63c8b7fe003531162a41c5a1c5a699ad"
+                     }
+                  },
+                  {
+                     "name" : "PDF",
+                     "small" : 1,
+                     "md5" : "462656055707fb2c1af14519afe84387",
+                     "file_size" : 42753872,
+                     "human_size" : "40.8 MB",
+                     "url" : {
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_c_1420484117.pdf.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=2340e0a46cce00b2d201eb63a41a0ebd",
+                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_c_1420484117.pdf?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=a7192197089854af2509301c6df9a803"
+                     }
+                  },
+                  {
+                     "name" : "PDF (HQ)",
+                     "small" : 1,
+                     "sha1" : "4c13143c53f77c3504ae72e05190e1d009a09af8",
+                     "file_size" : 196265456,
+                     "md5" : "2ef61f1e7b64b69531926ed8a7e0ed75",
+                     "human_size" : "187.2 MB",
+                     "url" : {
+                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_1420484117.pdf?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=c3e3cfad30fcf26119914dcd756cf627",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_1420484117.pdf.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=5beafb783a3894772f73b6b6b7db6019"
+                     }
+                  }
+               ],
+               "options_dict" : {},
+               "download_identifier" : "",
+               "platform" : "ebook",
+               "machine_name" : "alexandada_vol1_ebook",
+               "download_version_number" : null
+            }
+         ],
+         "custom_download_page_box_html" : ""
+      }
+   ],
+   "product" : {
+      "supports_canonical" : false,
+      "category" : "bundle",
+      "machine_name" : "imagecomics2_bookbundle",
+      "human_name" : "Humble Image Comics Bundle 2: Image Firsts"
+   },
+   "gamekey" : "CWAZ5u5PDYVUhW3U"
+}
