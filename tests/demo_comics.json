@@ -30,8 +30,8 @@
                "download_struct" : [
                   {
                      "url" : {
-                        "web" : "https://hb1.ssl.hwcdn.net/ImageComicsPreviewBook2015_1420484117.cbz?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=b1c29b31ace443f64e7c75ffb1fbd869",
-                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/ImageComicsPreviewBook2015_1420484117.cbz.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=0a7ef859f9b51971e7afc599f4a2325a"
+                        "web" : "https://hb1.ssl.hwcdn.net/ImageComicsPreviewBook2015_1420484117.cbz?gamekey=GAMEKEY&ttl=timestamp&t=b1c29b31ace443f64e7c75ffb1fbd869",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/ImageComicsPreviewBook2015_1420484117.cbz.torrent?gamekey=GAMEKEY&ttl=timestamp&t=0a7ef859f9b51971e7afc599f4a2325a"
                      },
                      "human_size" : "66.2 MB",
                      "name" : "CBZ",
@@ -41,8 +41,8 @@
                   },
                   {
                      "url" : {
-                        "web" : "https://hb1.ssl.hwcdn.net/ImageComicsPreviewBook2015_1420484117.epub?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=c83c5e48c3a3cc03a84ed13bca3dcad3",
-                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/ImageComicsPreviewBook2015_1420484117.epub.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=57f0ad328c88461fa24396bab693d2e2"
+                        "web" : "https://hb1.ssl.hwcdn.net/ImageComicsPreviewBook2015_1420484117.epub?gamekey=GAMEKEY&ttl=timestamp&t=c83c5e48c3a3cc03a84ed13bca3dcad3",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/ImageComicsPreviewBook2015_1420484117.epub.torrent?gamekey=GAMEKEY&ttl=timestamp&t=57f0ad328c88461fa24396bab693d2e2"
                      },
                      "human_size" : "66.2 MB",
                      "file_size" : 69465550,
@@ -53,8 +53,8 @@
                   },
                   {
                      "url" : {
-                        "web" : "https://hb1.ssl.hwcdn.net/imageexpo2015_previewbook_optimized_1420484117.pdf?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=c5fad93248a52caea9026f6b2988aad2",
-                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/imageexpo2015_previewbook_optimized_1420484117.pdf.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=47e35ccad55144115188e1bb741e4c25"
+                        "web" : "https://hb1.ssl.hwcdn.net/imageexpo2015_previewbook_optimized_1420484117.pdf?gamekey=GAMEKEY&ttl=timestamp&t=c5fad93248a52caea9026f6b2988aad2",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/imageexpo2015_previewbook_optimized_1420484117.pdf.torrent?gamekey=GAMEKEY&ttl=timestamp&t=47e35ccad55144115188e1bb741e4c25"
                      },
                      "human_size" : "67.8 MB",
                      "file_size" : 71145131,
@@ -65,8 +65,8 @@
                   },
                   {
                      "url" : {
-                        "web" : "https://hb1.ssl.hwcdn.net/ImageComicsPreviewBook2015_1420484117.pdf?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=d9e15f3b788c8050fad64eb5bcb77fd9",
-                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/ImageComicsPreviewBook2015_1420484117.pdf.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=ffe753eb22eed1b851c858f4a3119a7f"
+                        "web" : "https://hb1.ssl.hwcdn.net/ImageComicsPreviewBook2015_1420484117.pdf?gamekey=GAMEKEY&ttl=timestamp&t=d9e15f3b788c8050fad64eb5bcb77fd9",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/ImageComicsPreviewBook2015_1420484117.pdf.torrent?gamekey=GAMEKEY&ttl=timestamp&t=ffe753eb22eed1b851c858f4a3119a7f"
                      },
                      "human_size" : "122.2 MB",
                      "file_size" : 128115595,
@@ -95,8 +95,8 @@
                "download_struct" : [
                   {
                      "url" : {
-                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_1420484117.cbz?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=b8920d3353aab8e94c047244bfd91c00",
-                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_1420484117.cbz.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=e59d3d2bbdcaf180e009f05193bcf522"
+                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_1420484117.cbz?gamekey=GAMEKEY&ttl=timestamp&t=b8920d3353aab8e94c047244bfd91c00",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_1420484117.cbz.torrent?gamekey=GAMEKEY&ttl=timestamp&t=e59d3d2bbdcaf180e009f05193bcf522"
                      },
                      "human_size" : "60.3 MB",
                      "small" : 1,
@@ -112,8 +112,8 @@
                      "name" : "EPUB",
                      "human_size" : "60.4 MB",
                      "url" : {
-                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_1420484117.epub.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=75fedf786838740096d0e351e4d6175b",
-                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_1420484117.epub?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=63c8b7fe003531162a41c5a1c5a699ad"
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_1420484117.epub.torrent?gamekey=GAMEKEY&ttl=timestamp&t=75fedf786838740096d0e351e4d6175b",
+                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_1420484117.epub?gamekey=GAMEKEY&ttl=timestamp&t=63c8b7fe003531162a41c5a1c5a699ad"
                      }
                   },
                   {
@@ -123,8 +123,8 @@
                      "file_size" : 42753872,
                      "human_size" : "40.8 MB",
                      "url" : {
-                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_c_1420484117.pdf.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=2340e0a46cce00b2d201eb63a41a0ebd",
-                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_c_1420484117.pdf?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=a7192197089854af2509301c6df9a803"
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_c_1420484117.pdf.torrent?gamekey=GAMEKEY&ttl=timestamp&t=2340e0a46cce00b2d201eb63a41a0ebd",
+                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_c_1420484117.pdf?gamekey=GAMEKEY&ttl=timestamp&t=a7192197089854af2509301c6df9a803"
                      }
                   },
                   {
@@ -135,8 +135,8 @@
                      "md5" : "2ef61f1e7b64b69531926ed8a7e0ed75",
                      "human_size" : "187.2 MB",
                      "url" : {
-                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_1420484117.pdf?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=c3e3cfad30fcf26119914dcd756cf627",
-                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_1420484117.pdf.torrent?gamekey=CWAZ5u5PDYVUhW3U&ttl=1421782726&t=5beafb783a3894772f73b6b6b7db6019"
+                        "web" : "https://hb1.ssl.hwcdn.net/AlexAndAda_Vol1_1420484117.pdf?gamekey=GAMEKEY&ttl=timestamp&t=c3e3cfad30fcf26119914dcd756cf627",
+                        "bittorrent" : "https://hb1.ssl.hwcdn.net/torrents/AlexAndAda_Vol1_1420484117.pdf.torrent?gamekey=GAMEKEY&ttl=timestamp&t=5beafb783a3894772f73b6b6b7db6019"
                      }
                   }
                ],
@@ -156,5 +156,5 @@
       "machine_name" : "imagecomics2_bookbundle",
       "human_name" : "Humble Image Comics Bundle 2: Image Firsts"
    },
-   "gamekey" : "CWAZ5u5PDYVUhW3U"
+   "gamekey" : "GAMEKEY"
 }
