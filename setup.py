@@ -34,6 +34,6 @@ setup(
             'comics_downloader = comic_downloader.informationextractor:run'
         ]
     },
-    tests_require=['pytest', 'pytest-xdist'],
+    tests_require=['pytest', 'pytest-xdist', 'pytest-cov'],
     cmdclass={'test': PyTest},
 )

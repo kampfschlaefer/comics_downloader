@@ -43,7 +43,7 @@ def filter_filetypes(comics, filetype):
     return result
 
 
-def run():
+def run(cmd_args=None):
     parser = argparse.ArgumentParser(
         description='extract information from the json-files of humble bundles'
     )
@@ -59,7 +59,7 @@ def run():
         default='PDFHQ', choices=['PDFHQ', 'PDF', 'EPUB', 'CBZ']
     )
 
-    args = parser.parse_args()
+    args = parser.parse_args(cmd_args)
 
     #print args
 
@@ -93,5 +93,5 @@ def run():
             else:
                 print '! Skipping %s as it exists already!' % c['targetname']
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     run()
