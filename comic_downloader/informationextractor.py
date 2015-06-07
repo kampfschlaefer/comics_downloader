@@ -15,10 +15,8 @@ def parse_comics_json(filename):
         if name not in result:
             result[name] = {}
 
-        # print "Name: %s" % name
         for d in c['downloads']:
             for ds in d['download_struct']:
-                # print "name: {name}, md5: {md5}, url: {url[web]}".format(**ds)  # noqa
                 result[name][ds['name']] = {
                     'md5': ds['md5'],
                     'sha1': ds.get('sha1', ''),
@@ -43,7 +41,7 @@ def filter_filetypes(comics, filetype):
     if filetype == 'PDFHD':
         filetype = 'PDF (HD)'
     result = {}
-    for name, c in comics.iteritems():
+    for name, c in list(comics.items()):
         if filetype in c:
             result[name] = c[filetype]
     return result
@@ -67,29 +65,21 @@ def run(cmd_args=None):
 
     args = parser.parse_args(cmd_args)
 
-    # print args
-
     comics = parse_comics_json(args.jsonfile)
-    # print "comics: %s" % comics
 
     comics = filter_filetypes(comics, args.filetype)
 
-    # print "selected types: %s" % comics
-
     if args.extract in ['md5', 'sha1']:
-        for name, c in comics.iteritems():
+        for name, c in list(comics.items()):
             if args.extract in c and c[args.extract] != '':
-                print "%s %s" % (
-                    c[args.extract],
-                    c['targetname']
-                )
+                print("%s %s" % (c[args.extract], c['targetname']))
 
     if args.extract == 'urls':
-        for name, c in comics.iteritems():
-            print c['url']
+        for name, c in list(comics.items()):
+            print(c['url'])
 
     if args.extract == 'download':
-        for c in comics.itervalues():
+        for c in list(comics.values()):
             if not os.path.isdir(os.path.dirname(c['targetname'])):
                 os.makedirs(os.path.dirname(c['targetname']))
             if not os.path.isfile(c['targetname']):
@@ -100,7 +90,7 @@ def run(cmd_args=None):
                     c['url']
                 ])
             else:
-                print '! Skipping %s as it exists already!' % c['targetname']
+                print('! Skipping %s as it exists already!' % c['targetname'])
 
 if __name__ == '__main__':  # pragma: no cover
     run()

@@ -17,7 +17,7 @@ class PyTest(TestCommand):
         self.test_suite = True
 
     def run_tests(self):
-        #import here, cause outside the eggs aren't loaded
+        # import here, cause outside the eggs aren't loaded
         import pytest
         errno = pytest.main(self.pytest_args)
         sys.exit(errno)
@@ -28,6 +28,7 @@ setup(
     version='0.1',
     author='Arnold Krille',
     author_email='arnold@arnoldarts.de',
+    license='GPLv2',
     packages=find_packages(),
     entry_points={
         'console_scripts': [
