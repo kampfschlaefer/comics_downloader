@@ -9,10 +9,10 @@ def comics_json():
 
 
 def test_parse_json(comics_json):
-    assert comics_json.keys() == [
-        'pdfquality_warning_comics',
+    assert sorted(list(comics_json.keys())) == [
+        'alexandada_vol1',
         'imageexpo2015_previewbook',
-        'alexandada_vol1'
+        'pdfquality_warning_comics',
     ]
     assert sorted(comics_json['alexandada_vol1'].keys()) == [
         'CBZ', 'EPUB', 'PDF', 'PDF (HQ)'
@@ -90,7 +90,11 @@ def test_run_download(monkeypatch):
     )
     monkeypatch.setattr('os.makedirs', lambda path: None)
     informationextractor.run(
-        ['--extract', 'download', '--filetype', 'PDFHQ', 'tests/demo_comics.json']
+        [
+            '--extract', 'download',
+            '--filetype', 'PDFHQ',
+            'tests/demo_comics.json'
+        ]
     )
     assert len(called_args) == 2
     called_args
@@ -115,6 +119,10 @@ def test_run_download_one_existing(monkeypatch):
         lambda args: called_args.append(args)
     )
     informationextractor.run(
-        ['--extract', 'download', '--filetype', 'PDFHQ', 'tests/demo_comics.json']
+        [
+            '--extract', 'download',
+            '--filetype', 'PDFHQ',
+            'tests/demo_comics.json'
+        ]
     )
     assert len(called_args) == 1
