@@ -9,10 +9,10 @@ def comics_json():
 
 
 def test_parse_json(comics_json):
-    assert list(comics_json.keys()) == [
-        'pdfquality_warning_comics',
+    assert sorted(list(comics_json.keys())) == [
+        'alexandada_vol1',
         'imageexpo2015_previewbook',
-        'alexandada_vol1'
+        'pdfquality_warning_comics',
     ]
     assert sorted(comics_json['alexandada_vol1'].keys()) == [
         'CBZ', 'EPUB', 'PDF', 'PDF (HQ)'
