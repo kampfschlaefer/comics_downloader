@@ -55,7 +55,7 @@ def test_run_without_args():
             [],
             [
                 '2ef61f1e7b64b69531926ed8a7e0ed75',
-                'AlexAndAda_Vol1_1420484117.pdf'
+                'alexandada_vol1/AlexAndAda_Vol1_1420484117.pdf'
             ]
         ),
         (
@@ -81,17 +81,27 @@ def test_run_download(monkeypatch):
         'subprocess.check_call',
         lambda args: called_args.append(args)
     )
+    monkeypatch.setattr('os.makedirs', lambda path: None)
     informationextractor.run(
         ['--extract', 'download', 'tests/demo_comics.json']
     )
     assert len(called_args) == 2
+    called_args
+    destinations = set([
+        'alexandada_vol1/AlexAndAda_Vol1_1420484117.pdf',
+        'imageexpo2015_previewbook/ImageComicsPreviewBook2015_1420484117.pdf'
+    ])
+    for args in called_args:
+        destinations = destinations.difference(args)
+    assert destinations == set()
 
 
 def test_run_download_one_existing(monkeypatch):
     monkeypatch.setattr(
         'os.path.isfile',
-        lambda path: path == 'AlexAndAda_Vol1_1420484117.pdf'
+        lambda path: path == 'alexandada_vol1/AlexAndAda_Vol1_1420484117.pdf'
     )
+    monkeypatch.setattr('os.makedirs', lambda path: None)
     called_args = []
     monkeypatch.setattr(
         'subprocess.check_call',

@@ -15,17 +15,20 @@ def parse_comics_json(filename):
         if name not in result:
             result[name] = {}
 
-        #print "Name: %s" % name
+        # print "Name: %s" % name
         for d in c['downloads']:
             for ds in d['download_struct']:
-                #print "name: {name}, md5: {md5}, url: {url[web]}".format(**ds)
+                # print "name: {name}, md5: {md5}, url: {url[web]}".format(**ds)  # noqa
                 result[name][ds['name']] = {
                     'md5': ds['md5'],
                     'url': ds['url']['web'],
-                    'targetname': re.findall(
-                        '.+net/([^?]+)\?',
-                        ds['url']['web']
-                    )[0]
+                    'targetname': os.path.join(
+                        name,
+                        re.findall(
+                            '.+net/([^?]+)\?',
+                            ds['url']['web']
+                        )[0]
+                    )
                 }
 
     return result
@@ -61,20 +64,20 @@ def run(cmd_args=None):
 
     args = parser.parse_args(cmd_args)
 
-    #print args
+    # print args
 
     comics = parse_comics_json(args.jsonfile)
-    #print "comics: %s" % comics
+    # print "comics: %s" % comics
 
     comics = filter_filetypes(comics, args.filetype)
 
-    #print "selected types: %s" % comics
+    # print "selected types: %s" % comics
 
     if args.extract == 'md5':
         for name, c in comics.iteritems():
             print "%s %s" % (
                 c['md5'],
-                re.findall('.+net/([^?]+)\?', c['url'])[0]
+                c['targetname']
             )
 
     if args.extract == 'urls':
@@ -83,9 +86,11 @@ def run(cmd_args=None):
 
     if args.extract == 'download':
         for c in comics.itervalues():
+            if not os.path.isdir(os.path.dirname(c['targetname'])):
+                os.makedirs(os.path.dirname(c['targetname']))
             if not os.path.isfile(c['targetname']):
                 subprocess.check_call([
-                    #'echo',
+                    # 'echo',
                     'wget', '-c',
                     '-O', c['targetname'],
                     c['url']
