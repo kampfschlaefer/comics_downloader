@@ -54,15 +54,22 @@ def test_run_without_args():
         (
             [],
             [
-                '2ef61f1e7b64b69531926ed8a7e0ed75',
-                'alexandada_vol1/AlexAndAda_Vol1_1420484117.pdf'
+                'e7bb40aebb27b98921a338c2bee31ba4',
+                'alexandada_vol1/AlexAndAda_Vol1_1420484117.epub'
+            ]
+        ),
+        (
+            ['--extract', 'sha1'],
+            [
+                '2eb3c68c7e1a8ddf305d0fe4ecaac993b886e6a4',
+                'alexandada_vol1/AlexAndAda_Vol1_1420484117.epub'
             ]
         ),
         (
             ['--extract', 'urls'],
             [
                 'http', 'gamekey',
-                'AlexAndAda_Vol1_1420484117.pdf'
+                'AlexAndAda_Vol1_1420484117.epub'
             ]
         )
     )
@@ -83,7 +90,7 @@ def test_run_download(monkeypatch):
     )
     monkeypatch.setattr('os.makedirs', lambda path: None)
     informationextractor.run(
-        ['--extract', 'download', 'tests/demo_comics.json']
+        ['--extract', 'download', '--filetype', 'PDFHQ', 'tests/demo_comics.json']
     )
     assert len(called_args) == 2
     called_args
@@ -108,6 +115,6 @@ def test_run_download_one_existing(monkeypatch):
         lambda args: called_args.append(args)
     )
     informationextractor.run(
-        ['--extract', 'download', 'tests/demo_comics.json']
+        ['--extract', 'download', '--filetype', 'PDFHQ', 'tests/demo_comics.json']
     )
     assert len(called_args) == 1

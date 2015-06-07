@@ -21,6 +21,7 @@ def parse_comics_json(filename):
                 # print "name: {name}, md5: {md5}, url: {url[web]}".format(**ds)  # noqa
                 result[name][ds['name']] = {
                     'md5': ds['md5'],
+                    'sha1': ds.get('sha1', ''),
                     'url': ds['url']['web'],
                     'targetname': os.path.join(
                         name,
@@ -35,10 +36,12 @@ def parse_comics_json(filename):
 
 
 def filter_filetypes(comics, filetype):
-    if filetype not in ['PDFHQ', 'PDF', 'EPUB', 'CBZ']:
+    if filetype not in ['PDFHQ', 'PDFHD', 'PDF', 'EPUB', 'CBZ']:
         raise ValueError('invalid filetype to extract: %s' % filetype)
     if filetype == 'PDFHQ':
         filetype = 'PDF (HQ)'
+    if filetype == 'PDFHD':
+        filetype = 'PDF (HD)'
     result = {}
     for name, c in comics.iteritems():
         if filetype in c:
@@ -55,11 +58,11 @@ def run(cmd_args=None):
     )
     parser.add_argument(
         '--extract', '-e', dest='extract',
-        default='md5', choices=['md5', 'urls', 'download']
+        default='md5', choices=['md5', 'sha1', 'urls', 'download']
     )
     parser.add_argument(
         '--filetype', '-f', dest='filetype',
-        default='PDFHQ', choices=['PDFHQ', 'PDF', 'EPUB', 'CBZ']
+        default='EPUB', choices=['PDFHQ', 'PDFHD', 'PDF', 'EPUB', 'CBZ']
     )
 
     args = parser.parse_args(cmd_args)
@@ -73,12 +76,13 @@ def run(cmd_args=None):
 
     # print "selected types: %s" % comics
 
-    if args.extract == 'md5':
+    if args.extract in ['md5', 'sha1']:
         for name, c in comics.iteritems():
-            print "%s %s" % (
-                c['md5'],
-                c['targetname']
-            )
+            if args.extract in c and c[args.extract] != '':
+                print "%s %s" % (
+                    c[args.extract],
+                    c['targetname']
+                )
 
     if args.extract == 'urls':
         for name, c in comics.iteritems():
