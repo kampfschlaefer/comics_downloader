@@ -24,7 +24,7 @@ def parse_comics_json(filename):
                     'targetname': os.path.join(
                         name,
                         re.findall(
-                            '.+net/([^?]+)\?',
+                            '.+(?:net|com)/([^?]+)\?',
                             ds['url']['web']
                         )[0]
                     )
@@ -42,8 +42,14 @@ def filter_filetypes(comics, filetype):
         filetype = 'PDF (HD)'
     result = {}
     for name, c in list(comics.items()):
-        if filetype in c:
+        try:
             result[name] = c[filetype]
+        except KeyError:
+            if filetype.startswith('PDF '):
+                try:
+                    result[name] = c['PDF']
+                except KeyError:
+                    pass
     return result
 
 
